@@ -61,7 +61,7 @@ Engineering resilient infrastructure with **Terraform**, enforcing Zero-Trust at
 
 ---
 
-#### 4. [k8s-gitops-zerotrust](https://github.com/egekarabey35/k8s-gitops-zerotrust)
+#### 4. [k8s-gitops-zero-trust](https://github.com/egekarabey35/k8s-gitops-zerotrust)
 > Declarative Kubernetes cluster architecture with strict network isolation.
 
 * **Default-Deny Posture:** Enforced explicit ingress and egress NetworkPolicies across all namespaces.
