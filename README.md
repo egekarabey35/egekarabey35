@@ -14,6 +14,8 @@ I build small, inspectable security-engineering labs and document both the worki
 | [Compliance as Code](https://github.com/egekarabey35/compliance-as-code-pipeline) | OPA/Conftest, Python, Checkov/Trivy examples | Positive and negative policy fixtures, evidence-generator unit tests; **not PCI-DSS certification or an operational SOC 2 audit** |
 | [TRC-20 Webhook Gateway](https://github.com/egekarabey35/trc20-vault-webhook-gateway) | Go, HMAC-SHA256, Redis, Docker, Vault integration examples | Go race tests/vet, Docker build and HTTP/Redis integration smoke tests for invalid signatures, signed data validation and replay rejection; **no on-chain settlement implementation** |
 
+📋 **[Detailed verification matrix and reproducible test commands](VERIFICATION.md)** — what has been tested, plus clear boundaries for AWS, Kubernetes, Falco, compliance and TRC-20.
+
 ## Live GitHub Actions checks
 
 [![AWS IaC checks](https://github.com/egekarabey35/aws-terraform-hardened-infra/actions/workflows/pipeline.yml/badge.svg)](https://github.com/egekarabey35/aws-terraform-hardened-infra/actions/workflows/pipeline.yml)
