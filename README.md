@@ -9,10 +9,10 @@ I build small, inspectable security-engineering labs and document both the worki
 | Project | Technologies | What the automated checks demonstrate |
 | --- | --- | --- |
 | [AWS Terraform Hardened Infrastructure](https://github.com/egekarabey35/aws-terraform-hardened-infra) | AWS VPC/ALB/ASG, Terraform, IAM/KMS | Terraform formatting/initialization/validation, TFLint and tfsec configuration scanning; **not an AWS production deployment** |
-| [Kubernetes GitOps Zero Trust](https://github.com/egekarabey35/k8s-gitops-zero-trust) | Kubernetes, Argo CD, NetworkPolicy, Pod Security | Kube-Linter static manifest checks; **not a runtime CNI enforcement test** |
+| [Kubernetes GitOps Zero Trust](https://github.com/egekarabey35/k8s-gitops-zero-trust) | Kubernetes, Argo CD, NetworkPolicy, Pod Security | Kube-Linter, real Kind workload readiness/Restricted admission and image digest checks; **not a runtime CNI enforcement test** |
 | [Falco Runtime Security](https://github.com/egekarabey35/falco-runtime-security) | Falco/eBPF, Go, Kubernetes API | Go unit tests, authorization/body limits, mocked Kubernetes API patch and bounded quarantine queue; **not real eBPF detection in a live cluster** |
 | [Compliance as Code](https://github.com/egekarabey35/compliance-as-code-pipeline) | OPA/Conftest, Python, Checkov/Trivy examples | Positive and negative policy fixtures, evidence-generator unit tests; **not PCI-DSS certification or an operational SOC 2 audit** |
-| [TRC-20 Webhook Gateway](https://github.com/egekarabey35/trc20-vault-webhook-gateway) | Go, HMAC-SHA256, Redis, Docker, Vault integration examples | Go race tests/vet, Docker build and HTTP/Redis integration smoke tests for invalid signatures, signed data validation and replay rejection; **no on-chain settlement implementation** |
+| [TRC-20 Webhook Gateway](https://github.com/egekarabey35/trc20-vault-webhook-gateway) | Go, HMAC-SHA256, Redis, Docker, Vault integration examples | Go race/vet, Docker HTTP/Redis integration, canonical-hash replay checks and real Kubernetes API NetworkPolicy validation; **no on-chain settlement implementation** |
 
 📋 **[Detailed verification matrix and reproducible test commands](VERIFICATION.md)** — what has been tested, plus clear boundaries for AWS, Kubernetes, Falco, compliance and TRC-20.
 
